@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/updateBook" method="post">
+    <table>
+        <tr>
+            <td>图书id</td>
+            <td><input type="text" readonly="readonly" name="id" th:value="${update.id}"/></td>
+        </tr>
+        <tr>
+            <td>图书名称</td>
+            <td><input type="text" name="bookName" th:value="${update.bookName}"/></td>
+        </tr>
+        <tr>
+            <td>图书价格</td>
+            <td><input type="text" name="bookPrice" th:value="${update.bookPrice}"/></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="提交"/></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

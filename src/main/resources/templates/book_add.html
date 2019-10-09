@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <meta charset="UTF-8">
+    <title>bookAdd</title>
+</head>
+<body>
+<form action="/addBook" method="post">
+    <table>
+        <tr>
+            <td>图书id</td>
+            <td><input type="text" name="id"/></td>
+        </tr>
+        <tr>
+            <td>图书名称</td>
+            <td><input type="text" name="bookName"/></td>
+        </tr>
+        <tr>
+            <td>图书价格</td>
+            <td><input type="text" name="bookPrice"/></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="提交"/></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
